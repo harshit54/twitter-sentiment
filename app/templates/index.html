@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/main.css') }}">
+        <script>
+            function authenticate()
+            {
+                if(document.getElementById("search").value == "")
+                {
+                    alert("Please Fill The Keyword Box.");
+                    return false;
+                }
+                return true;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="main">
+            <h1>How Does <img src = "{{ url_for('static',filename='images/twitter_logo.svg') }}">Feel About It?</h1>
+            <h2>Enter Any Keyword Here: </h2>
+            <form action="/next" method="POST"  onsubmit="return authenticate()">
+                <input type="text" id="search" name="search" placeholder="Search Twitter">
+                <input type="submit" id="submit" name="submit">
+            </form>
+            {% block body %}
+            {% endblock %}
+        </div>
+    </body>
+    <footer>Created By: Harshit Joshi</footer>
+</html>

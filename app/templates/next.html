@@ -1,0 +1,13 @@
+{% extends 'index.html' %}
+
+{% block body %}
+<h2>Current sentiment about "{{ keyword }}" is: <span style="color: {{ color }}">{{ sentiment_value }}</span></h2>
+<h3>What does this mean?</h3>
+<p>
+    The site outputs number in the range of -1 to 1.<br>
+    <ol>
+        <li><span style="color:tomato">Red</span> implies that people hate it.</li>
+        <li><span style="color:green">Green</span> implies that people love it.</li>
+    </ol>
+</p>
+{% endblock %}
