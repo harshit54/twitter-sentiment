@@ -1,14 +1,14 @@
 # Sentiment Analysis Using Twitter
 
-##Location
+## Location
 
 The app is located [here](https://twitter-senti-analysis.herokuapp.com/).
 
-##Purpose
+## Purpose
 
 The app get the 100 most popular tweets on any topic and applies setiment analysis on it.
 
-##Working
+## Working
 
 This is a simple application using Flask and the Twitter API.
 The app is hosted on [Heroku](https://heroku.com "Heroku").
