@@ -6,7 +6,7 @@ The app is located [here](https://twitter-senti-analysis.herokuapp.com/).
 
 ## Purpose
 
-The app get the 100 most popular tweets on any topic and applies setiment analysis on it.
+The app gets the 100 most popular tweets on any topic and applies setiment analysis on it.
 
 ## Working
 
